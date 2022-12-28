@@ -1,0 +1,56 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @template availability_time/time
+
+    Displays a time selector
+
+    Example context (json):
+    {
+
+    }
+}}
+<span class="col-form-label pr-3"><label>{{#str}} title, availability_time {{/str}}</label></span>
+<span class="availability-group form-group">
+    <label>{{#str}} from {{/str}}
+    <select name="availability_time_from_hour" class="customselect">
+    {{#hours}}
+        <option value="{{hour}}">{{hour}}</option>
+    {{/hours}}
+    </select>
+    :
+    <select name="availability_time_from_minute" class="customselect">
+    {{#minutes}}
+        <option value="{{minute}}">{{minute}}</option>
+    {{/minutes}}
+    </select>
+    </label>
+
+    <label>{{#str}} to {{/str}}
+    <select name="availability_time_to_hour" class="customselect">
+    {{#hours}}
+        <option value="{{hour}}">{{hour}}</option>
+    {{/hours}}
+    </select>
+    :
+    <select name="availability_time_to_minute" class="customselect">
+    {{#minutes}}
+        <option value="{{minute}}">{{minute}}</option>
+    {{/minutes}}
+    </select>
+    </label>
+</span>
