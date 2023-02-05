@@ -1,0 +1,7 @@
+.availability_time label {
+    break-after: always;
+}
+
+.availability_time label span {
+    width: 4rem;
+}

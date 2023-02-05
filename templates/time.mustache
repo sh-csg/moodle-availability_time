@@ -26,28 +26,28 @@
 }}
 <span class="col-form-label pr-3"><label>{{#str}} title, availability_time {{/str}}</label></span>
 <span class="availability-group form-group">
-    <label>{{#str}} from {{/str}}
-    <select name="availability_time_from_hour" class="customselect">
+    <label><span>{{#str}} from {{/str}}</span>
+    <select name="availability_time_from_hour" class="custom-select">
     {{#hours}}
         <option value="{{hour}}">{{hour}}</option>
     {{/hours}}
     </select>
     :
-    <select name="availability_time_from_minute" class="customselect">
+    <select name="availability_time_from_minute" class="custom-select">
     {{#minutes}}
         <option value="{{minute}}">{{minute}}</option>
     {{/minutes}}
     </select>
     </label>
 
-    <label>{{#str}} to {{/str}}
-    <select name="availability_time_to_hour" class="customselect">
+    <label><span>{{#str}} to {{/str}}</span>
+    <select name="availability_time_to_hour" class="custom-select">
     {{#hours}}
         <option value="{{hour}}">{{hour}}</option>
     {{/hours}}
     </select>
     :
-    <select name="availability_time_to_minute" class="customselect">
+    <select name="availability_time_to_minute" class="custom-select">
     {{#minutes}}
         <option value="{{minute}}">{{minute}}</option>
     {{/minutes}}
