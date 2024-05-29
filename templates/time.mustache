@@ -26,7 +26,7 @@
 }}
 <span class="col-form-label pr-3"><label>{{#str}} title, availability_time {{/str}}</label></span>
 <span class="availability-group form-group">
-    <label><span>{{#str}} from {{/str}}</span>
+    <label><span>{{#str}} from, availability_time {{/str}}</span>
     <select name="availability_time_from_hour" class="custom-select">
     {{#hours}}
         <option value="{{hour}}">{{hour}}</option>
@@ -40,7 +40,7 @@
     </select>
     </label>
 
-    <label><span>{{#str}} to {{/str}}</span>
+    <label><span>{{#str}} to, availability_time {{/str}}</span>
     <select name="availability_time_to_hour" class="custom-select">
     {{#hours}}
         <option value="{{hour}}">{{hour}}</option>
