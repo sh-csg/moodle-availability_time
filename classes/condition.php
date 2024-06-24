@@ -37,6 +37,12 @@ class condition extends \core_availability\condition {
      */
     protected $to;
 
+    /** @var string the string containing the "from" date */
+    private string $fromstring;
+
+    /** @var string the string containing the "to" date */
+    private string $tostring;
+
     /**
      * @var bool Whether the time period contains midnight.
      */
